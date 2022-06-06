@@ -1,0 +1,174 @@
+/* 
+Author: Kristine Christensen
+Date Modified: 6/5/2022
+Project: Assignment 6: Re-Create a Portfolio Website Using CSS Flexbox
+*/
+
+
+/* ===============================
+     Set up Page Container  Styles
+=================================*/
+
+html {
+    box-sizing:border-box;
+}
+
+
+body {
+    display:flex;
+    flex-direction: column;
+    margin:0px;
+    min-height:100vh;
+    font-family: 'Lato','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("images/moroccan-flower.png");   /* I could only get the background to cover the entire main section by placing it here */   
+}
+
+header, footer {
+    background-color: rgb(49, 114, 114);
+    /* padding:20px; */
+    
+}
+
+header {
+    padding:20px 20px 0px;
+    border-bottom:#333 solid 3px;
+}
+
+header nav, main {
+    max-width:840px;
+    margin:0 auto;
+    display:flex;
+    /* border:red solid 2px; */
+}
+
+
+/* ===============================
+     Set up Header Link Styles
+=================================*/ 
+
+.nameLogo {
+    margin-right:auto;
+    margin-top:auto;
+    padding:20px;
+    background-color:#333;
+    color:white;  
+    margin-bottom:none; 
+}
+
+.nameLogo:hover {
+    background-color:gray;
+    color:white;
+}
+
+header nav a.link{
+    color:white;
+    margin:0 10px;
+    margin-top:auto;
+    padding:20px 10px 20px;
+}
+
+header nav a.link:hover{
+    background-color:#333;
+    color:white;
+}
+
+
+.nameLogo, .link {
+    text-decoration: none;
+}
+
+/* ===============================
+            Article Styles
+=================================*/ 
+
+article {
+    width:600px;
+    margin-bottom:20px;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    padding:0 20px;
+    margin-top:20px;
+}
+ 
+
+article h1 {
+    border-bottom: solid 2px #333;
+    margin-bottom: 10px;
+   
+}
+
+article img {
+    float: left;
+    margin-right:10px;
+    border:solid 1px #333;
+}
+
+article img.center {
+    
+    display:block;
+    margin:0 auto;
+    border:none;
+    float:none;
+}
+
+article p.contact {
+    padding:40px;
+    font-size:1.5em;
+    border-radius: 10px;
+    background-color: #333;
+    color:white;
+}
+
+
+/* ===============================
+            Aside Styles
+=================================*/     
+
+
+aside {
+    width:200px;
+    background-color:white;
+    margin:20px 20px 0; 
+    text-align:center;   
+    padding:0 10px 20px;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    height:fit-content;  /* only show necessary height */
+}
+
+aside p {
+    border-bottom: 2px solid #333;
+    margin-bottom:10px;
+    font-size:1.3em;
+    font-weight:bold;
+}
+aside nav a img {
+    width:40px;
+    padding:5px;
+    
+}
+
+aside nav {
+    padding: 0 auto;
+}
+
+
+
+
+/* ===============================
+            Footer Styles
+=================================*/            
+
+footer {
+    border-top: solid 3px #333;
+    text-align:center;
+    color:white;
+    padding:20px;
+    margin-top:auto; /* push footer to the bottom */
+}
+footer a{
+    text-decoration: none;
+    color:white;
+}
+footer a:hover{
+    color:rgb(24, 24, 23);
+}
